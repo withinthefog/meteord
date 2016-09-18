@@ -1,6 +1,6 @@
 set -e
 
-npm info form-data
+npm list -g
 
 if [ -d /bundle ]; then
   cd /bundle
