@@ -20,3 +20,6 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 npm config set registry https://registry.npm.taobao.org
 
 npm install --global npm@3
+
+# 使用cnpm替代npm
+npm install -g cnpm --registry=https://registry.npm.taobao.org

@@ -13,7 +13,8 @@ elif [[ $BUNDLE_URL ]]; then
   curl -L -o bundle.tar.gz $BUNDLE_URL
   tar xzf bundle.tar.gz
   cd /tmp/bundle/programs/server/
-  npm install --unsafe-perm
+#  npm install --unsafe-perm
+  cnpm install --unsafe-perm --loglevel=http
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
   cd /built_app
