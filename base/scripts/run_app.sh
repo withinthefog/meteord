@@ -1,5 +1,7 @@
 set -e
 
+npm info form-data
+
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
