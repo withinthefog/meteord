@@ -4,7 +4,8 @@ if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
   cd /bundle/bundle/programs/server/
-  npm install --unsafe-perm
+#  npm install --unsafe-perm
+  cnpm i --unsafe-perm --loglevel=http
   cd /bundle/bundle/
 elif [[ $BUNDLE_URL ]]; then
   cd /tmp
@@ -12,7 +13,8 @@ elif [[ $BUNDLE_URL ]]; then
   tar xzf bundle.tar.gz
   cd /tmp/bundle/programs/server/
 #  npm install --unsafe-perm
-  /opt/nodejs/lib/node_modules/cnpm/bin/cnpm install --unsafe-perm --loglevel=http
+#  /opt/nodejs/lib/node_modules/cnpm/bin/cnpm install --unsafe-perm --loglevel=http
+  cnpm i --unsafe-perm --loglevel=http
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
   cd /built_app

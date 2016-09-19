@@ -22,5 +22,5 @@ npm config set registry https://registry.npm.taobao.org
 npm install --global npm@3
 
 # 使用cnpm替代npm
-npm install -g cnpm --registry=https://registry.npm.taobao.org --loglevel=debug
-ln -sf /opt/nodejs/lib/node_modules/cnpm/bin/cnpm /opt/nodejs/bin/
+npm i -g cnpm --registry=https://registry.npm.taobao.org
+ln -s /opt/nodejs/bin/cnpm /usr/local/bin/
