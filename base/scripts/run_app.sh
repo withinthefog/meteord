@@ -1,7 +1,5 @@
 set -e
 
-npm list -g
-
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
@@ -14,7 +12,7 @@ elif [[ $BUNDLE_URL ]]; then
   tar xzf bundle.tar.gz
   cd /tmp/bundle/programs/server/
 #  npm install --unsafe-perm
-  cnpm install --unsafe-perm --loglevel=http
+  /opt/nodejs/lib/node_modules/cnpm/bin/cnpm install --unsafe-perm --loglevel=http
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
   cd /built_app
